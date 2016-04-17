@@ -101,6 +101,8 @@ Deletes PetWalker with specified id and returns STATUS:200 OK and deleted PetWal
 
 #Bonuses
 Code first migration to create db
+
 Use Repository Pattern to access db
+
 Return appropriate Http Status Code 
 
