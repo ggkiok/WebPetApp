@@ -1,6 +1,9 @@
 # WebPetApp
 WebPetApplication
-TASKS FROM Application Assignment 
+
+You can test this Web Api using POSTMAN in google chrome extensions.You can read the manual here of how the web service can be queried using Postman.
+
+#TASKS FROM Application Assignment 
 
 // GET api/PetsOwner/{petownerId}/Pets
 returns List of Pets by Owner Id in json fromat STATUS:200 OK
@@ -31,7 +34,7 @@ UPDATE pet with given id (You must give in json format all info of pet to update
 // GET api/Pets/Age/{age:int}
 returns Pets under given age(integer) in json fromat STATUS:200 OK
 
-ADDITIONAL TASKS THAT Application can do
+#ADDITIONAL features that Application can do
 
 GET api/Pets
 return all Pets in json fromat STATUS:200 OK
