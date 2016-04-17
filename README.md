@@ -98,3 +98,9 @@ Creates new PetWalker.You must POST in Json Format the new PetWalker info(FirstN
 
 // DELETE api/PetWalker/{petwalkerid}
 Deletes PetWalker with specified id and returns STATUS:200 OK and deleted PetWalker in Json Format
+
+#Bonuses
+Code first migration to create db
+Use Repository Pattern to access db
+Return appropriate Http Status Code 
+
