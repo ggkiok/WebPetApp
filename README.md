@@ -19,7 +19,7 @@ returns Pet By id in json fromat STATUS:200 OK
 
 // POST api/Pets
 
-Creates new pet.You must POST in Json Format the new pet info(Name,DateOfBirth,PetOwnerId) and returns STATUS:201 and new created Pet in Json Format i.e
+Creates new pet.You must POST with Json Format (and with header Content-Type:application/json) the new pet info(Name,DateOfBirth,PetOwnerId) and returns STATUS:201 and new created Pet in Json Format i.e
 {
 "Name":"Lucy",
 "DateOfBirth":"2014-12-15 00:00:00.000",
@@ -28,7 +28,7 @@ Creates new pet.You must POST in Json Format the new pet info(Name,DateOfBirth,P
 
 // PUT api/Pets/{petid}
 
-UPDATE pet with given id (You must give in json format all info of pet to update (Id,Name,DateOfBirth,PetOwnerId) and returns STATUS:204 NoContent i.e 
+UPDATE pet with given id (You must give in json format (and with header Content-Type:application/json) all info of pet to update (Id,Name,DateOfBirth,PetOwnerId) and returns STATUS:204 NoContent i.e 
 {
 "Id": 27,
 "Name":"Rodo",
@@ -58,7 +58,7 @@ returns all PetOwners in json fromat STATUS:200 OK
 returns PetOwner By id in json fromat STATUS:200 OK
 
 // PUT api/PetsOwner/{petownerid}
-UPDATE petowner with given id (You must give in json format all info of petowner to update (Id,FirstName,LastName,Email) and returns STATUS:204 NoContent i.e 
+UPDATE petowner with given id (You must give in json format (and with header Content-Type:application/json) all info of petowner to update (Id,FirstName,LastName,Email) and returns STATUS:204 NoContent i.e 
  {
     "Id": 19,
     "FirstName": "George",
@@ -67,7 +67,7 @@ UPDATE petowner with given id (You must give in json format all info of petowner
   }
 
 // POST api/PetsOwner
-Creates new PetOwner.You must POST in Json Format the new PetOwner info(Name,DateOfBirth,PetOwnerId) and returns STATUS:201 and new created PetOwner in Json Format i.e
+Creates new PetOwner.You must POST in Json Format (and with header Content-Type:application/json) the new PetOwner info(Name,DateOfBirth,PetOwnerId) and returns STATUS:201 and new created PetOwner in Json Format i.e
 {
 "FirstName":"Andreas",
 "LastName":"Kili",
@@ -84,7 +84,7 @@ return all PetWalkers in json fromat STATUS:200 OK
 returns PetWalker By id in json fromat STATUS:200 OK
 
 // PUT api/PetWalker/{petwalkerid}
-UPDATE PetWalker with given id (You must give in json format all info of PetWalker to update (Id,FirstName,LastName,Email,PhoneNumber) and returns STATUS:204 NoContent i.e 
+UPDATE PetWalker with given id (You must give in json format (and with header Content-Type:application/json) all info of PetWalker to update (Id,FirstName,LastName,Email,PhoneNumber) and returns STATUS:204 NoContent i.e 
 {
   "Id": 19,
   "FirstName": "Panagiota",
@@ -94,7 +94,7 @@ UPDATE PetWalker with given id (You must give in json format all info of PetWalk
 }
 
 // POST api/PetWalker
-Creates new PetWalker.You must POST in Json Format the new PetWalker info(FirstName,LastName,Email,PhoneNumber) and returns STATUS:201 and new created PetWalker in Json Format i.e
+Creates new PetWalker.You must POST in Json Format (and with header Content-Type:application/json) the new PetWalker info(FirstName,LastName,Email,PhoneNumber) and returns STATUS:201 and new created PetWalker in Json Format i.e
 {
 "FirstName":"Xara",
 "LastName":"Joe",
