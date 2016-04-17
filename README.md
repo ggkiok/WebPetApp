@@ -8,7 +8,7 @@ returns List of Pets by Owner Id in json fromat STATUS:200 OK
 // GET api/PetsOwner/{petownerId}/Approves/{petwalkerId}
 returns true if PetOwner(petownerId) approves PetWalker(petwalkerId) or false if does not approve STATUS:200 OK
 
-GET api/Pets/{petid}
+// GET api/Pets/{petid}
 returns Pet By id in json fromat STATUS:200 OK
 
 // POST api/Pets
@@ -28,10 +28,10 @@ UPDATE pet with given id (You must give in json format all info of pet to update
 "PetOwnerId":21
 }
 
-GET api/Pets/Age/{age:int}
+// GET api/Pets/Age/{age:int}
 returns Pets under given age(integer) in json fromat STATUS:200 OK
 
-ADDITIONAL TASKS THAT Assignment can do
+ADDITIONAL TASKS THAT Application can do
 
 GET api/Pets
 return all Pets in json fromat STATUS:200 OK
@@ -76,14 +76,14 @@ returns PetWalker By id in json fromat STATUS:200 OK
 
 // PUT api/PetWalker/{petwalkerid}
 UPDATE PetWalker with given id (You must give in json format all info of PetWalker to update (Id,FirstName,LastName,Email,PhoneNumber) and returns STATUS:204 NoContent i.e 
-  {
-    "Id": 19,
-    "FirstName": "Panagiota",
-    "LastName": "Mountz",
-    "Email": "p.mou@Petlover.com",
-    "PhoneNumber": "6989898989"
-  }
-  
+{
+  "Id": 19,
+  "FirstName": "Panagiota",
+  "LastName": "Mountz",
+  "Email": "p.mou@Petlover.com",
+  "PhoneNumber": "6989898989"
+}
+
 // POST api/PetWalker
 Creates new PetWalker.You must POST in Json Format the new PetWalker info(FirstName,LastName,Email,PhoneNumber) and returns STATUS:201 and new created PetWalker in Json Format i.e
 {
