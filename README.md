@@ -10,12 +10,15 @@ You can test this Web Api using POSTMAN in google chrome extensions.You can read
 returns List of Pets by Owner Id in json fromat STATUS:200 OK
 
 // GET api/PetsOwner/{petownerId}/Approves/{petwalkerId}
+
 returns true if PetOwner(petownerId) approves PetWalker(petwalkerId) or false if does not approve STATUS:200 OK
 
 // GET api/Pets/{petid}
+
 returns Pet By id in json fromat STATUS:200 OK
 
 // POST api/Pets
+
 Creates new pet.You must POST in Json Format the new pet info(Name,DateOfBirth,PetOwnerId) and returns STATUS:201 and new created Pet in Json Format i.e
 {
 "Name":"Lucy",
@@ -24,6 +27,7 @@ Creates new pet.You must POST in Json Format the new pet info(Name,DateOfBirth,P
 }
 
 // PUT api/Pets/{petid}
+
 UPDATE pet with given id (You must give in json format all info of pet to update (Id,Name,DateOfBirth,PetOwnerId) and returns STATUS:204 NoContent i.e 
 {
 "Id": 27,
@@ -33,6 +37,7 @@ UPDATE pet with given id (You must give in json format all info of pet to update
 }
 
 // GET api/Pets/Age/{age:int}
+
 returns Pets under given age(integer) in json fromat STATUS:200 OK
 
 #ADDITIONAL features that Application can do
